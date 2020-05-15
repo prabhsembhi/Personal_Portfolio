@@ -17,7 +17,7 @@
         #buddies {
             text-align: center;
             width: 100%;
-            margin: 10% auto;
+            /* margin: 10% auto; */
             background: rgba(252, 130, 16, .3);
             padding: 2rem;
 
@@ -95,6 +95,9 @@
                 width: 60%;
                 margin: 10% auto;
 
+            }
+            .left-align{
+                text-align: right;
             }
 
             #grading_system {
@@ -187,7 +190,7 @@
             <div>
                 <img src="images/Buddies/Google login.png" alt="Google login">
             </div>
-            <div>
+            <div class="left-align">
                 <h4>Google login Api</h4>
                 <p>Used the google login option for the user, which made it easier for us to get the basic profile
                     information and also gave the user a sence of securtiy. With the use of firebase to store the token
@@ -212,7 +215,7 @@
             <div>
                 <img src="images/Buddies/Creating new group.png" alt="Google login">
             </div>
-            <div>
+            <div class="left-align">
                 <h4>Creating a group</h4>
                 <p>User has the option to create a new group and start his own meetup by adding information like
                     location, description and hash tags. After creation of a group a user also could add the events to
@@ -235,7 +238,7 @@
             <div >
                 <img src="images/Buddies/Joining a group.png" alt="Google login">
             </div>
-            <div>
+            <div class="left-align">
                 <h4>Join a group</h4>
                 <p>To join a group user needs to click on the Join The Group button, which will then add the group into
                     their group list and hence they would be able to be a part of the group discussions</p>
@@ -244,7 +247,7 @@
         </div>
         <div class="description-right">
 
-            <div>
+            <div >
                 <h4>Firebase for Realtime chatting</h4>
                 <p>Creating a structure in firebase to store the chats of the all the groups and also keep them in the
                     same order as they were received. An option to store it along with the date could also be made which
@@ -258,7 +261,7 @@
             <div >
                 <img src="images/Buddies/Real time group chatting.png" alt="Google login">
             </div>
-            <div>
+            <div class="left-align">
                 <h4>Group chat</h4>
                 <p>This is how the chat page looks like, the layout design is minimal for simplicity but to make it more
                     user friendly more work could be done to make it look alike many well known chatting apps in market
@@ -299,7 +302,7 @@
             <div>
                 <img class="image-style" src="images/Grading System/login Gui.jpg" alt="Google login">
             </div>
-            <div>
+            <div class="left-align">
                 <h4>User Login</h4>
                 <p>Both teachers and students use the same approach for login. The radio buttons does the partition.</p>
             </div>
@@ -320,7 +323,7 @@
             <div>
                 <img class="image-style" src="images/Grading System/Teacher Gui.png" alt="Google login">
             </div>
-            <div>
+            <div class="left-align">
                 <h4>Teachers Login</h4>
                 <p>Teacher could only see the class performance for his particular subject. Teacher is abe to see the
                     marks and also could update it if required. The option to chat with student is given on the right
@@ -346,7 +349,7 @@
             <div>
                 <img class="image-style" src="images/Classic Cafe/Home page.png" alt="Google login">
             </div>
-            <div>
+            <div class="left-align">
                 <h4>Home Page</h4>
                 <p>The Home page has a clear layout which make it very easy for the customers to interact with. The very
                     middle part give the user with the information about the rewards.</p>
@@ -366,7 +369,7 @@
             <div>
                 <img class="image-style" src="images/Classic Cafe/Users rewards.png" alt="Google login">
             </div>
-            <div>
+            <div class="left-align">
                 <h4>User rewards</h4>
                 <p>The rewards are seen on the Home page. Every time a purchacse is made the purchase section goes up by
                     1. Upon completion of 7 purchases, the user gets a reward that could be used whenever is demanded.
@@ -388,7 +391,7 @@
             <div>
                 <img class="image-style" src="images/Classic Cafe/Updated rewards.png" alt="Google login">
             </div>
-            <div>
+            <div class="left-align">
                 <h4>Updated Rewards</h4>
                 <p>After a reward or purchase gets increased, it gets updated in the database (made in MS Access), with
                     the backend use of java. The rewards could be seen on the Home page upon refresh.</p>

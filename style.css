@@ -59,14 +59,14 @@ p {
 }
 
 .nav-icon{
-  padding: 20px 3rem;
+  padding: 20px;
     position: relative;
     display: block;
     background-color: rgba(252,130,16,.8);
     margin: 10px;
     width: 100%;
-    margin: 10px auto;
-    transition: .8s ease-in;
+    margin: 10px;
+    transition: .5s ease-in;
 }
 .nav-icon a {
   padding: 3px 10px;
@@ -422,15 +422,15 @@ position: relative;
 
   .hr1 {
     position: absolute;
-    left: 30%;
-    top: 20px;
+    left: 20%;
+    top: 52px;
     visibility: visible;
   }
 
   .hr2 {
     position: absolute;
-    right: 30%;
-    top: 20px;
+    right: 20%;
+    top: 52px;
 
   }
   .about-info {
@@ -520,7 +520,7 @@ position: relative;
 
 
   .ul-part li{
-    background-color: rgba(252,130,16,.8);
+    background-color: rgba(252,130,16,1);
       width: 50%;
       border-radius: 50px;
       margin: auto;
