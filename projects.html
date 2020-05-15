@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prabh Sembhi Projects</title>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+
+    <link href="https://fonts.googleapis.com/css?family=Neuton|Nunito+Sans&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        #buddies {
+            text-align: center;
+            width: 100%;
+            margin: 10% auto;
+            background: rgba(252, 130, 16, .3);
+            padding: 2rem;
+
+        }
+
+        .buddies-video {
+            text-align: center;
+        }
+
+        .buddies-video video {
+            width: 300px;
+            height: 500px;
+        }
+
+        #grading_system {
+            text-align: center;
+            width: 100%;
+            margin: 10% auto;
+            background: rgba(0, 130, 16, .3);
+            padding: 2rem;
+        }
+
+        #classicCafe {
+            text-align: center;
+            width: 100%;
+            margin: 10% auto;
+            background: rgba(0, 50, 116, .3);
+            padding: 2rem;
+        }
+
+        .image-style {
+            width: 300px;
+            height: 270px;
+        }
+
+        .h1-display {
+            display: block;
+            text-align: center;
+        }
+
+        .description-left {
+            display: grid;
+            grid-template-columns: auto;
+            /* padding: 10px;
+            margin: 20px; */
+        }
+
+        .description-right {
+            display: grid;
+            grid-template-columns: auto;
+            /* padding: 10px;
+            margin: 20px; */
+        }
+
+        .description-right-pic {
+            text-align: center;
+        }
+
+        .project_description {
+            padding: 2rem;
+            text-align: center;
+        }
+
+        @media (min-width: 1230px) {
+            .ul-part li {
+                background-color: rgba(252, 130, 16, .8);
+                width: 20%;
+                border-radius: 50px;
+                margin: auto;
+                height: 60px;
+            }
+
+            #buddies {
+                text-align: left;
+                width: 60%;
+                margin: 10% auto;
+
+            }
+
+            #grading_system {
+                text-align: left;
+                width: 60%;
+                margin: 10% auto;
+                background: rgba(0, 130, 16, .3);
+            }
+
+            #classicCafe {
+                text-align: left;
+                width: 60%;
+                margin: 10% auto;
+                background: rgba(0, 50, 116, .3);
+            }
+
+            .description-left {
+                display: grid;
+                grid-template-columns: 40% auto;
+                padding: 10px;
+                margin: 20px;
+            }
+
+            .description-right {
+                display: grid;
+                grid-template-columns: auto 40%;
+                padding: 10px;
+                margin: 20px;
+            }
+
+            .description-right-pic {
+                text-align: right;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+
+
+
+
+    <nav id="nav">
+        <div class="nav-div">
+
+
+            <ul class="ul-part">
+                <li>
+                    <div class="nav-icon">
+                        <a href="index.html">
+                            <i class="fas fa-home"></i>
+                            <span>Home</span>
+                        </a>
+                    </div>
+                    <div class="nav-icon">
+                        <a href="">
+                            <i class="fas fa-file-word"></i>
+                            <span>Resume</span>
+                        </a>
+                    </div>
+                </li>
+            </ul>
+    </nav>
+
+    <div class="menu-btn">
+        <div class="btn-line"></div>
+        <div class="btn-line"></div>
+        <div class="btn-line"></div>
+    </div>
+    <section id="buddies">
+        <h1 class="h1-display">Buddies</h1>
+        <div class="buddies-video">
+            <!-- <video width="400" controls muted autoplay>
+                <source src="images/Buddies/mobileAppProjectVideo.webm" type="video/mp4">
+                Your browser does not support HTML video.
+            </video> -->
+
+            <div class="project_description">
+                <p style="font-weight: 600;">A replica for the meetUp app currently in the market. It allows user to sign-in with google, create
+                    groups to have gatherings
+                    of people with similar interests. A user could join a group or create one and then have diffrent
+                    events.
+                    Joining a group also allows user to be part of group chat and track the live location of other group
+                    members. The privacy of users if maintained and information is only shared if they allow it. </p>
+
+            </div>
+        </div>
+        <div class="description-left">
+            <div>
+                <img src="images/Buddies/Google login.png" alt="Google login">
+            </div>
+            <div>
+                <h4>Google login Api</h4>
+                <p>Used the google login option for the user, which made it easier for us to get the basic profile
+                    information and also gave the user a sence of securtiy. With the use of firebase to store the token
+                    given by google to individual user, i used the token to implement the group chats those are stored
+                    and are real time. The token is also usedd to fetch the location of the user from where ever he
+                    signs in upon permision</p>
+            </div>
+        </div>
+        <div class="description-right">
+
+            <div>
+                <h4>Home page</h4>
+                <p>Fetch the Information from google like user's name, user, photo and user's email to display on the
+                    home page and user's token to use it in the real time chatting and location along with configuration
+                    of groups</p>
+            </div>
+            <div class="description-right-pic">
+                <img src="images/Buddies/Home page.png" alt="Google login">
+            </div>
+        </div>
+        <div class="description-left">
+            <div>
+                <img src="images/Buddies/Creating new group.png" alt="Google login">
+            </div>
+            <div>
+                <h4>Creating a group</h4>
+                <p>User has the option to create a new group and start his own meetup by adding information like
+                    location, description and hash tags. After creation of a group a user also could add the events to
+                    it and give information to it including, email, time, duration, and location.</p>
+            </div>
+        </div>
+        <div class="description-right">
+
+            <div>
+                <h4>Search Groups or Events</h4>
+                <p>User could search a group based on its name, location, event and hash tags. Join it if seems
+                    interested. After joining the group, user also gets included in the group chat room (created with
+                    the use of real time NoSql database, Firebase).</p>
+            </div>
+            <div class="description-right-pic">
+                <img src="images/Buddies/Searching group.png" alt="Google login">
+            </div>
+        </div>
+        <div class="description-left">
+            <div >
+                <img src="images/Buddies/Joining a group.png" alt="Google login">
+            </div>
+            <div>
+                <h4>Join a group</h4>
+                <p>To join a group user needs to click on the Join The Group button, which will then add the group into
+                    their group list and hence they would be able to be a part of the group discussions</p>
+            </div>
+
+        </div>
+        <div class="description-right">
+
+            <div>
+                <h4>Firebase for Realtime chatting</h4>
+                <p>Creating a structure in firebase to store the chats of the all the groups and also keep them in the
+                    same order as they were received. An option to store it along with the date could also be made which
+                    will also enable the user to search chats from a particular user and date.</p>
+            </div>
+            <div >
+                <img src="images/Buddies/Firebase.png" alt="Google login">
+            </div>
+        </div>
+        <div class="description-left">
+            <div >
+                <img src="images/Buddies/Real time group chatting.png" alt="Google login">
+            </div>
+            <div>
+                <h4>Group chat</h4>
+                <p>This is how the chat page looks like, the layout design is minimal for simplicity but to make it more
+                    user friendly more work could be done to make it look alike many well known chatting apps in market
+                </p>
+            </div>
+
+        </div>
+        <div class="description-right">
+
+            <div>
+                <h4>Realtime Location</h4>
+                <p>Made use og google maps Api to do this task and gained a great knowledge on how to implement Api's
+                    into an application. Group members realtime location can be traced if they allow it once asked for
+                    permission alert. </p>
+            </div>
+            <div class="description-right-pic">
+                <img src="images/Buddies/Real time updating location of group users.png" alt="Google login">
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+    <section id="grading_system">
+        <h1 class="h1-display">Grading System</h1>
+        <div class="project_description">
+            <p style="font-weight: 600;">Grading system is a Java based software used for the use of students and teacher to interac with each
+                other online. The software is made with the data structure algoriths and also shows the use of ip
+                address for the functional chatting from remote stations.
+                Teachers could upload the student result into the system and are the system does the
+                calculation for them as well allow them to chat with individual students. The students could see their
+                grades and also chat with teacher for any queries.</p>
+        </div>
+        <div class="description-left">
+            <div>
+                <img class="image-style" src="images/Grading System/login Gui.jpg" alt="Google login">
+            </div>
+            <div>
+                <h4>User Login</h4>
+                <p>Both teachers and students use the same approach for login. The radio buttons does the partition.</p>
+            </div>
+        </div>
+        <div class="description-right">
+
+            <div>
+                <h4>Student Login</h4>
+                <p>Students is able to see his marks in both of his subjects and the system also calculates the GPA for
+                    the student. The right panel allows student to chat with the respective teacher for any queries to
+                    be made.</p>
+            </div>
+            <div class="description-right-pic">
+                <img class="image-style" src="images/Grading System/Student Gui.png" alt="Google login">
+            </div>
+        </div>
+        <div class="description-left">
+            <div>
+                <img class="image-style" src="images/Grading System/Teacher Gui.png" alt="Google login">
+            </div>
+            <div>
+                <h4>Teachers Login</h4>
+                <p>Teacher could only see the class performance for his particular subject. Teacher is abe to see the
+                    marks and also could update it if required. The option to chat with student is given on the right
+                    panel and this is the place where Teacher would get any messages from students and is able to make
+                    clerifications.</p>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="classicCafe">
+        <h1 class="h1-display">Classic Cafe</h1>
+        <div class="project_description" >
+            <p style="font-weight: 600;">Classic cafe is a website created during my software engineering course, with a focus to learn the use of
+                spring framework and gain the experience of how the structure of programming works in an orgnization. It
+                is a basic website created by use Java for the backend development and also has the implementation of
+                the Spring MVC model.
+
+                The users get registered upon signing up and are able to get the rewards after every 7 purchases that
+                helps the company to make thier customers happy and increase their business.</p>
+        </div>
+        <div class="description-left">
+            <div>
+                <img class="image-style" src="images/Classic Cafe/Home page.png" alt="Google login">
+            </div>
+            <div>
+                <h4>Home Page</h4>
+                <p>The Home page has a clear layout which make it very easy for the customers to interact with. The very
+                    middle part give the user with the information about the rewards.</p>
+            </div>
+        </div>
+        <div class="description-right">
+
+            <div>
+                <h4>Log In</h4>
+                <p>Upon sign up, the user starts gaining rewards and gets to see it upon loggin in.</p>
+            </div>
+            <div>
+                <img class="image-style" src="images/Classic Cafe/Log in.png" alt="Google login">
+            </div>
+        </div>
+        <div class="description-left">
+            <div>
+                <img class="image-style" src="images/Classic Cafe/Users rewards.png" alt="Google login">
+            </div>
+            <div>
+                <h4>User rewards</h4>
+                <p>The rewards are seen on the Home page. Every time a purchacse is made the purchase section goes up by
+                    1. Upon completion of 7 purchases, the user gets a reward that could be used whenever is demanded.
+                </p>
+            </div>
+        </div>
+        <div class="description-right">
+
+            <div>
+                <h4>Menu</h4>
+                <p>Menu page has a cart made with the use of some made with the use of javascript and is very user
+                    friendly and interactive. Making the buying online experience very exciting.</p>
+            </div>
+            <div class="description-right-pic">
+                <img class="image-style" src="images/Classic Cafe/menu.png" alt="Google login">
+            </div>
+        </div>
+        <div class="description-left">
+            <div>
+                <img class="image-style" src="images/Classic Cafe/Updated rewards.png" alt="Google login">
+            </div>
+            <div>
+                <h4>Updated Rewards</h4>
+                <p>After a reward or purchase gets increased, it gets updated in the database (made in MS Access), with
+                    the backend use of java. The rewards could be seen on the Home page upon refresh.</p>
+            </div>
+        </div>
+        <div class="description-right">
+
+            <div>
+                <h4>Softwares Used</h4>
+                <p style="font-weight: 600;">The preparation of this website was made with the use of HTML, CSS,
+                    JAVASCRIPT (Software used was
+                    Visual Studio) for the front-end. Back-end was complied using Java (Software used was eclipse), a
+                    Maven project was created and the use of spring framework was used for getting the knowlegde of MVC
+                    structure. GITHUB was used to make contributions and understand to purpose of new branches and
+                    mergers that is a great part of to also learn about the agile environment. MS Access was used to
+                    create a SQL Database.</p>
+            </div>
+            <div class="description-right-pic">
+                <img class="image-style" src="images/Classic Cafe/softwares used.png" alt="Google login">
+            </div>
+        </div>
+
+    </section>
+
+    <script>
+        // Select DOM Items
+        const menuBtn = document.querySelector('.menu-btn');
+
+        //var elem = document.getElementById('nav');
+
+        var elems = document.getElementsByClassName('nav-icon');
+
+
+
+        // Set Initial State Of Menu
+        let showMenu = false;
+
+        menuBtn.addEventListener('click', toggleMenu);
+
+        function toggleMenu() {
+            if (!showMenu) {
+                menuBtn.classList.add('close');
+
+                var elem = document.getElementById("nav");
+
+                var pos = -500;
+                var myReq;
+                var id = setInterval(frame1, 5);
+
+                function frame1() {
+
+
+
+                    pos++;
+                    elem.style.top = pos + "px";
+                    if (pos < 0) {
+
+                        myReq = window.requestAnimationFrame(frame1);
+                    } else {
+
+                        cancelAnimationFrame(myReq);
+                        clearInterval(id);
+                    }
+                }
+
+
+
+
+                // Set Menu State
+                showMenu = true;
+            } else {
+
+                menuBtn.classList.remove('close');
+
+                var elem = document.getElementById("nav");
+                var pos = 0;
+                var id = setInterval(frame2, 5);
+
+                function frame2() {
+                    pos--;
+                    elem.style.top = pos + "px";
+                    if (pos > -500) {
+
+                        myReq = window.requestAnimationFrame(frame2);
+                    } else {
+
+                        cancelAnimationFrame(myReq);
+                        clearInterval(id);
+                        elem.removeAttribute('style');
+                    }
+                }
+
+               
+                // Set Menu State
+                showMenu = false;
+            }
+          
+        }
+    </script>
+</body>
+
+</html>
