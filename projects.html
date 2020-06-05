@@ -155,7 +155,7 @@
                     </div>
                     <div class="nav-icon">
                         <a href="resume.html">
-                            <i class="fas fa-file-word"></i>
+                            <i class="fas fa-file"></i>
                             <span>Resume</span>
                         </a>
                     </div>
@@ -416,81 +416,9 @@
 
     </section>
 
-    <script>
-        // Select DOM Items
-        const menuBtn = document.querySelector('.menu-btn');
-
-        //var elem = document.getElementById('nav');
-
-        var elems = document.getElementsByClassName('nav-icon');
-
-
-
-        // Set Initial State Of Menu
-        let showMenu = false;
-
-        menuBtn.addEventListener('click', toggleMenu);
-
-        function toggleMenu() {
-            if (!showMenu) {
-                menuBtn.classList.add('close');
-
-                var elem = document.getElementById("nav");
-
-                var pos = -500;
-                var myReq;
-                var id = setInterval(frame1, 5);
-
-                function frame1() {
-
-
-
-                    pos++;
-                    elem.style.top = pos + "px";
-                    if (pos < 0) {
-
-                        myReq = window.requestAnimationFrame(frame1);
-                    } else {
-
-                        cancelAnimationFrame(myReq);
-                        clearInterval(id);
-                    }
-                }
-
-
-
-
-                // Set Menu State
-                showMenu = true;
-            } else {
-
-                menuBtn.classList.remove('close');
-
-                var elem = document.getElementById("nav");
-                var pos = 0;
-                var id = setInterval(frame2, 5);
-
-                function frame2() {
-                    pos--;
-                    elem.style.top = pos + "px";
-                    if (pos > -500) {
-
-                        myReq = window.requestAnimationFrame(frame2);
-                    } else {
-
-                        cancelAnimationFrame(myReq);
-                        clearInterval(id);
-                        elem.removeAttribute('style');
-                    }
-                }
-
-               
-                // Set Menu State
-                showMenu = false;
-            }
-          
-        }
-    </script>
+    <!-- jquery Api -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>
