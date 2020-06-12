@@ -13,6 +13,10 @@
 
     <link href="https://fonts.googleapis.com/css?family=Neuton|Nunito+Sans&display=swap" rel="stylesheet">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <link rel="stylesheet" href="style.css">
 
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
@@ -27,7 +31,7 @@
     <title>Prabh Sembhi Portfolio</title>
 </head>
 
-<body>
+<body onload=typeWriter()>
 
 
     <!-- Nav Bar -->
@@ -88,8 +92,8 @@
                 <source src="Abstract - 14764.mp4" type="video/mp4">
             </video> -->
         <div class="homeTitleContainer">
-            <h1 class="homeTitle">
-                I am Prabh Sembhi,<br> Programmer and Developer
+            <h1 class="homeTitle" id="title">
+               
             </h1>
             <a href="#work"><img class="arrow" src="images/Icon feather-arrow-down.png" alt=""></a>
         </div>
@@ -109,23 +113,31 @@
 
 
 
-        <div class="work-grid-container">
+        <div class="work-grid-container" data-aos="fade-up" data-aos-duration="1000">
 
-            <div class="work-img">
+            <div class="work-img ">
+                <img class="image-index" src="images/gurpreet portfolio.png" alt="image1">
+                <div class="work-hov ">
+                    <a href="https://github.com/prabhsembhi/gurpreet_portfolio.git" target="_blank">View Code</a>
+                    <a href="https://prabhsembhi.github.io/gurpreet_portfolio/index.html" target="_blank">View Project</a>
+                </div>
+            </div>
+            
+            <div class="work-img ">
                 <img class="image-index" src="images/Keeper.png" alt="image1">
                 <div class="work-hov ">
                     <a href="https://github.com/prabhsembhi/google-keep-replica.git" target="_blank">View Code</a>
                     <a href="https://prabhsembhi.github.io/google-keep-replica/" target="_blank">View Project</a>
                 </div>
             </div>
-            <div class="work-img">
+            <div class="work-img ">
                 <img style="background-color: #ff4c68;" class="image-index" src="images/tindog.png" alt="image1 ">
                 <div class="work-hov ">
                     <a href="https://github.com/prabhsembhi/tindog.git" target="_blank">View Code</a>
                     <a href="https://prabhsembhi.github.io/tindog/" target="_blank">View Project</a>
                 </div>
             </div>
-            <div class="work-img">
+            <div class="work-img ">
                 <img class="image-index" src="images/buddies.png" alt="image1">
                 <div class="work-hov ">
                     <a href="https://github.com/prabhsembhi/Buddies_Android_App.git" target="_blank">View Code</a>
@@ -134,14 +146,14 @@
             </div>
            
           
-            <div class="work-img">
+            <div class="work-img ">
                 <img class="image-index" src="images/Classic cafe.png" alt="image1">
                 <div class="work-hov ">
                     <a href="https://github.com/prabhsembhi/classic_cafe.git" target="_blank">View Code</a>
                     <a href="projects.html#classicCafe" target="_blank">View Project</a>
                 </div>
             </div>
-            <div class="work-img">
+            <div class="work-img ">
                 <img class="image-index" src="images/Grading System.png" alt="image1">
                 <div class="work-hov ">
                     <a href="https://github.com/prabhsembhi/Grading_system.git" target="_blank">View Code</a>
@@ -228,9 +240,16 @@
         </div>
     </section>
 
+    <!-- animation on scroll -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
     <!-- jquery Api -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="script.js"></script>
+
 </body>
 
 </html>

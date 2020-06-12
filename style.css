@@ -167,6 +167,8 @@ p {
 }
 
 .homeTitle {
+  width: 75%;
+  margin: auto;
   color: black;
   position: relative;
   top: 40%;
@@ -409,7 +411,9 @@ p {
     justify-content: center;
 
   }
-
+  .homeTitle {
+    width: 35%;
+  }
 
 
   /* about section */
